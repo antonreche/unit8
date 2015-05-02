@@ -35,7 +35,7 @@ public class ControlPersonal {
 		Collections.sort(personas, new Comparator<Persona>(){
 			@Override
 			public int compare(Persona p1, Persona p2){
-				return new String(p2.getDni()).compareTo(new String(p1.getDni()));
+				return new String(p1.getDni()).compareTo(new String(p2.getDni()));
 			}
 		});
 	}
@@ -90,6 +90,7 @@ public class ControlPersonal {
 		Asignatura programacion=new Asignatura("Progamación");
 		Asignatura entornos=new Asignatura("Entornos de programación");
 		Asignatura sistemas=new Asignatura("Sistemas informáticos");
+		Asignatura lenguajes=new Asignatura("Lenguajes de marcas");
 		
 		Profesor profesor1=new Profesor("Profesor1", "1111AAA");
 		Profesor profesor2=new Profesor("Profesor2", "2222BBB");
@@ -102,10 +103,12 @@ public class ControlPersonal {
 		profesor1.anyadirAsignatura(programacion);
 		profesor2.anyadirAsignatura(sistemas);
 		profesor3.anyadirAsignatura(entornos);
+		profesor3.anyadirAsignatura(lenguajes);
 		
 		alumno1.anyadirAsignatura(programacion);
 		alumno2.anyadirAsignatura(sistemas);
 		alumno3.anyadirAsignatura(entornos);
+		alumno2.anyadirAsignatura(lenguajes);
 		
 		//ponemos nota a las asignaturas de los profesores
 		ArrayList<Asignatura> asignaturas;
