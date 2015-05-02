@@ -89,7 +89,7 @@ public class ControlPersonal {
 		ControlPersonal control=new ControlPersonal();
 		Asignatura programacion=new Asignatura("Progamación");
 		Asignatura entornos=new Asignatura("Entornos de programación");
-		Asignatura sistemas=new Asignatura("Sistemas informáticos");
+		Asignatura basesDatos=new Asignatura("Bases de datos");
 		
 		Profesor profesor1=new Profesor("Profesor1", "1111AAA");
 		Profesor profesor2=new Profesor("Profesor2", "2222BBB");
