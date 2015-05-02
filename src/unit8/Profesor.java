@@ -8,6 +8,7 @@ package unit8;
  * @version Mayor 2015
  */
 public class Profesor extends Persona{
+	private double salario;
 	
 	public Profesor(String nombre, String dni){
 		this.nombre=nombre;
@@ -16,6 +17,14 @@ public class Profesor extends Persona{
 	
 	public boolean esProfesor(){
 		return true;
+	}
+	
+	public void setSalario(double salario){
+		this.salario=salario;
+	}
+	
+	public double getSalario(){
+		return salario;
 	}
 
 }
