@@ -89,8 +89,9 @@ public class ControlPersonal {
 		ControlPersonal control=new ControlPersonal();
 		Asignatura programacion=new Asignatura("Progamación");
 		Asignatura entornos=new Asignatura("Entornos de programación");
-		Asignatura sistemas=new Asignatura("Sistemas informáticos");
+		Asignatura sistemas=new Asignatura("Sistemas");
 		Asignatura lenguajes=new Asignatura("Lenguajes de marcas");
+		Asignatura basesDatos=new Asignatura("Bases de datos");
 		
 		Profesor profesor1=new Profesor("Profesor1", "1111AAA");
 		Profesor profesor2=new Profesor("Profesor2", "2222BBB");
@@ -104,11 +105,13 @@ public class ControlPersonal {
 		profesor2.anyadirAsignatura(sistemas);
 		profesor3.anyadirAsignatura(entornos);
 		profesor3.anyadirAsignatura(lenguajes);
+		profesor2.anyadirAsignatura(basesDatos);
 		
 		alumno1.anyadirAsignatura(programacion);
 		alumno2.anyadirAsignatura(sistemas);
 		alumno3.anyadirAsignatura(entornos);
 		alumno2.anyadirAsignatura(lenguajes);
+		alumno3.anyadirAsignatura(basesDatos);
 		
 		//ponemos nota a las asignaturas de los profesores
 		ArrayList<Asignatura> asignaturas;
